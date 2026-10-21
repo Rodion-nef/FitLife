@@ -4,14 +4,10 @@ def calculate_water(weight):
     ml = weight * 30
     return round(ml / 1000, 1)
 if __name__ == "__main__":
-    print('Здравствуйте, я бот от FitLife.')
-    user_name = input("Как вас зовут?")
-    user_age = int(input("Сколько вам лет?"))
-   # print(f'Приятно познакомиться {user_name}')
-    user_weight = float(input('Укажите пожалуйста ' \
-    'свой вес в кг,используя точку '))
-    user_height = float(input('Укажите пожалуйста' \
-    ' свой рост в метрах, используя точку '))
+    user_name = input()
+    user_age = int(input())
+    user_weight = float(input())
+    user_height = float(input())
     bmi_result = calculate_bmi(user_weight, user_height)
     water_result = calculate_water(user_weight)                               
     print(f'Отчет для пользователя: {user_name} ({user_age} г.)')
