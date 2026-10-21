@@ -1,10 +1,14 @@
-def calculate_bmi(weight, height):  
+def calculate_bmi(weight, height):
     """Вычисляет индекс массы тела."""
     return round(weight / (height ** 2), 1)
-def calculate_water(weight):  
+
+
+def calculate_water(weight):
     """Вычисляет рекомендуемую норму воды в литрах."""
     ml = weight * 30
     return round(ml / 1000, 1)
+
+
 if __name__  ==  "__main__":
     user_name = input()
     user_age = int(input())
